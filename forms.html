@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de formulário</title>
+    </head>
+
+    <body style="margin: 20px;">
+
+        <!--conteúdo da página-->
+
+        <h2>Cadastro de usuário</h2>
+        <form action="inserirUsuario.php" method="post">
+            <fieldset>
+                <legend>Dados do usuário</legend>
+                <label for="txtId">Id</label>
+                <input type="text" name="txtId" id="txtId" readonly value="0001">
+                <br><br>
+                <label for="txtNome">Nome</label>
+                <input type="text" name="txtNome" id="txtNome" autofocus required placeholder="Informe o nome completo">
+                <br><br>
+                <label for="txtEmail">E-mail</label>
+                <input type="email" name="txtEmail" id="txtEmail" required placeholder="Informe um e-mail válido">
+                <br><br>
+                <label for="txtUsuario">Usuário</label>
+                <input type="text" name="txtUsuario" id="txtUsuario" required placeholder="Informe o usuário">
+                <br><br>
+                <label for="txtSenha">Senha</label>
+                <input type="password" name="txtSenha" id="txtSenha" required placeholder="Informe a senha">
+                <br><br>
+                <label for="txtConfirmaSenha">Confirmar Senha</label>
+                <input type="password" name="txtConfirmaSenha" id="txtConfirmaSenha" required placeholder="Confirme a senha">
+                <br><br>
+                <label for="dataNasc">Data de nascimento</label>
+                <input type="date" name="dataNasc" id="dataNasc">
+                <br><br>
+                <label for="radioGenero">Gênero</label>
+                <input type="radio" name="radioGenero" id="radioGenero" value="F">Feminino 
+                <input type="radio" name="radioGenero" id="radioGenero" value="M">Masculino 
+                <input type="radio" name="radioGenero" id="radioGenero" value="O">Outro 
+                <br><br>
+                <label for="ddlEstCivil">Estado Civil</label>
+                <select name="ddlEstCivil" id="ddlEstCivil">
+                    <option value="C">Casado(a)</option>
+                    <option value="D">Divorciado(a)</option>
+                    <option value="S" selected>Solteiro(a)</option>
+                    <option value="V">Viúvo(a)</option>
+                </select>
+                <br><br>
+                <label for="chkAssuntosInteresse">Assuntos de Interesse</label>
+                <input type="checkbox" name="chkAssuntosInteresse" id="chkAssuntosInteresse" value="TI">Tecnologia da Informação
+                <input type="checkbox" name="chkAssuntosInteresse" id="chkAssuntosInteresse" value="ES">Esportes
+                <input type="checkbox" name="chkAssuntosInteresse" id="chkAssuntosInteresse" value="ED" checked>Educação
+                <input type="checkbox" name="chkAssuntosInteresse" id="chkAssuntosInteresse" value="GA">Games
+                <input type="checkbox" name="chkAssuntosInteresse" id="chkAssuntosInteresse" value="CL">Culinária
+                <br><br>
+                <label for="txtOBS">Observações</label>
+                <textarea name="txtOBS" id="txtOBS" cols="60" rows="10" placeholder="Informe uma observação"></textarea>
+                <br><br>
+                <label for="fileImage">Imagem</label>
+                <input type="file" name="fileImage" id="fileImage">
+                <br><br>
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Cancelar">
+                <br><br>
+            </fieldset>
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabelas em HTML</title>
+    </head>
+
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        th {
+            background-color: silver;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+
+    <body>
+        <div style="background-color: rgb(210, 228, 175); padding: 10px;">
+            <a href="index.html">Home</a> |
+            <a href="listas.html">Listas</a> |
+            <a href="tabelas.html">Tabelas</a> |
+            <a href="https://www.ifmg.edu.br/ourobranco/" target="_blank">IFMG Ouro Branco</a>
+        </div>
+
+        <h2>Tabelas em HTML</h2>
+        <table>
+            <tr>
+                <th colspan="5">Equipamentos de informática</th>
+            </tr>
+            <tr>
+                <th rowspan="6" style="background-color: skyblue;">Loja 01</th>
+                <th>Código</th>
+                <th>Nome do equipamento</th>
+                <th>Preço unitário</th>
+                <th>Quantidade</th>
+            </tr>
+
+            <tr>
+                <td>0001</td>
+                <td>Notebook</td>
+                <td>R$ 5500,00</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>0002</td>
+                <td>Mouse</td>
+                <td>R$50,00</td>
+                <td>30</td>
+            </tr>
+
+            <tr>
+                <td>0003</td>
+                <td>Teclado</td>
+                <td>R$100,00</td>
+                <td>25</td>
+            </tr>
+
+            <tr>
+                <td>0004</td>
+                <td>Monitor</td>
+                <td>R$850,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right; font-weight: bold;">Total</td>
+                <td style="font-weight: bold;">R$6500</td>
+                <td style="font-weight: bold;">77</td>
+            </tr>
+            <tr>
+                <th rowspan="6" style="background-color: skyblue;">Loja 02</th>
+                <th>Código</th>
+                <th>Nome do equipamento</th>
+                <th>Preço unitário</th>
+                <th>Quantidade</th>
+            </tr>
+
+            <tr>
+                <td>0001</td>
+                <td>Notebook</td>
+                <td>R$ 5500,00</td>
+                <td>12</td>
+            </tr>
+
+            <tr>
+                <td>0002</td>
+                <td>Mouse</td>
+                <td>R$50,00</td>
+                <td>30</td>
+            </tr>
+
+            <tr>
+                <td>0003</td>
+                <td>Teclado</td>
+                <td>R$100,00</td>
+                <td>25</td>
+            </tr>
+
+            <tr>
+                <td>0004</td>
+                <td>Monitor</td>
+                <td>R$850,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right; font-weight: bold;">Total</td>
+                <td style="font-weight: bold;">R$6500</td>
+                <td style="font-weight: bold;">77</td>
+            </tr>
+        </table>
+        
+        <h2>
+            Lista de contatos
+        </h2>
+        
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Contato</th>
+            </tr>
+            <tr>
+                <td rowspan="3">Márcio Assis</td>
+                <td>marcio.assis@ifmg.edu.br</td>
+            </tr>
+            <tr>
+                <td>profmarcioassis@gmail.com</td>
+            </tr>
+            <tr>
+                <td>bsi@ifmg.edu.br</td>
+            </tr>
+
+            <tr>
+                <td>Raquel Arêdes</td>
+                <td>aredesatelier@gmail.com</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Ellen</td>
+                <td>ellen@gmail.com</td>
+            </tr>
+            <tr>
+                <td>ellen2@yahoo.com</td>
+            </tr>
+        </table>
+    </body>
+</html>
