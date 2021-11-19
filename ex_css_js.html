@@ -1,105 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ex Javascript</title>
-    <style>
-       
-        #demo{
-            font-weight: bold;
-            font-style: italic;
-            font-family: Arial, Helvetica, sans-serif;
-        }
 
-        .normal{
-            font-size: 15px;
-            text-align: justify;
-            font-family: 'Courier New', Courier, monospace;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <title>Ex Javascript</title>
+        <style>
+            body{
 
-        table, th, td{
-            border: 1px solid white;
-            border-collapse: collapse;
-        }
+                /*
+                margin-top: 20px;
+                margin-right: 40px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                */
+                
+                margin: 20px;  
+            }
+            
+            #demo {
+                font-weight: bold;
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-        .titulo{
-            background-color: silver;
-            font-size: 20px;
-            color: black;
-        }
+            .normal {
+                font-size: 15px;
+                text-align: justify;
+                font-family: 'Courier New', Courier, monospace;
+            }
 
-        .subtitulo{
-            background-color: white;
-            color: black;
-        }
+            table,
+            th,
+            td {
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
 
-    </style>
-</head>
-<body>
+            .titulo {
+                background-color: silver;
+                font-size: 20px;
+                color: black;
+            }
 
-    <p style="text-decoration: none;">EU</p>
+            .subtitulo {
+                background-color: white;
+                color: black;
+            }
 
-
-
-
-    <h1>Lorem ipsum dolor sit amet</h1>
-
-    <table>
-        <tr>
-            <th class="titulo">Título 1</th>
-            <th class="titulo">Título 1</th>
-            <th class="titulo">Título 1</th>
-        </tr>
-        <tr>
-            <td class="subtitulo">conteúdo</td>
-            <td>conteúdo</td>
-            <td>conteúdo</td>
-        </tr>
-        <tr>
-            <td class="subtitulo">conteúdo</td>
-            <td>conteúdo</td>
-            <td>conteúdo</td>
-        </tr>
-
-    </table>
+            .center {
+                display: grid;
+                place-items: center;
+                width: 400px;
+                height: 400px;
+                background-color: rgb(166, 166, 221);
+                margin: auto;
+            }
 
 
-    <h2>Subtítulo</h2>
-    <p id="demo" style="color: yellow; background-color: black;">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim placeat cum consectetur mollitia, voluptate at natus distinctio? Optio aperiam consequatur doloremque ea aliquam! Nostrum quisquam at laborum eius mollitia!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias perspiciatis architecto quaerat, pariatur quas accusantium exercitationem ad quod sed a, illo eius debitis omnis tenetur! Libero saepe facere voluptatum eos.
-    </p>
-    <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id similique maiores dolore laudantium sit quisquam rem totam laboriosam, omnis dignissimos! Praesentium inventore quam eveniet aut voluptates repudiandae reiciendis.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio perspiciatis dolorum iusto assumenda nobis ducimus nesciunt eos dicta atque consequatur? Dolorum eius accusantium dignissimos. Ipsum natus beatae repellat! Magnam, eius!
-    </p>
-    <h1 class="normal">Lorem ipsum dolor sit amet</h1>
-    <p class="normal">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim placeat cum consectetur mollitia, voluptate at natus distinctio? Optio aperiam consequatur doloremque ea aliquam! Nostrum quisquam at laborum eius mollitia!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias perspiciatis architecto quaerat, pariatur quas accusantium exercitationem ad quod sed a, illo eius debitis omnis tenetur! Libero saepe facere voluptatum eos.
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id similique maiores dolore laudantium sit quisquam rem totam laboriosam, omnis dignissimos! Praesentium inventore quam eveniet aut voluptates repudiandae reiciendis.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio perspiciatis dolorum iusto assumenda nobis ducimus nesciunt eos dicta atque consequatur? Dolorum eius accusantium dignissimos. Ipsum natus beatae repellat! Magnam, eius!
-    </p>
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim placeat cum consectetur mollitia, voluptate at natus distinctio? Optio aperiam consequatur doloremque ea aliquam! Nostrum quisquam at laborum eius mollitia!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias perspiciatis architecto quaerat, pariatur quas accusantium exercitationem ad quod sed a, illo eius debitis omnis tenetur! Libero saepe facere voluptatum eos.
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id similique maiores dolore laudantium sit quisquam rem totam laboriosam, omnis dignissimos! Praesentium inventore quam eveniet aut voluptates repudiandae reiciendis.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio perspiciatis dolorum iusto assumenda nobis ducimus nesciunt eos dicta atque consequatur? Dolorum eius accusantium dignissimos. Ipsum natus beatae repellat! Magnam, eius!
-    </p>
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim placeat cum consectetur mollitia, voluptate at natus distinctio? Optio aperiam consequatur doloremque ea aliquam! Nostrum quisquam at laborum eius mollitia!
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias perspiciatis architecto quaerat, pariatur quas accusantium exercitationem ad quod sed a, illo eius debitis omnis tenetur! Libero saepe facere voluptatum eos.
-    </p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id similique maiores dolore laudantium sit quisquam rem totam laboriosam, omnis dignissimos! Praesentium inventore quam eveniet aut voluptates repudiandae reiciendis.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio perspiciatis dolorum iusto assumenda nobis ducimus nesciunt eos dicta atque consequatur? Dolorum eius accusantium dignissimos. Ipsum natus beatae repellat! Magnam, eius!
-    </p>
+            .conteudo {
+                background-color: #004AAD;
+                width: 100px;
+                height: 100px;
+            }
 
-    <button onclick="document.getElementById('demo').innerHTML='Novo texto do parágrafo'">Alterar texto</button>
-    
-</body>
+        </style>
+    </head>
+
+    <body>
+        <h1>Lorem ipsum dolor sit amet</h1>
+
+        <table>
+            <tr>
+                <th class="titulo">Título 1</th>
+                <th class="titulo">Título 1</th>
+                <th class="titulo">Título 1</th>
+            </tr>
+            <tr>
+                <td class="subtitulo">conteúdo</td>
+                <td>conteúdo</td>
+                <td>conteúdo</td>
+            </tr>
+            <tr>
+                <td class="subtitulo">conteúdo</td>
+                <td>conteúdo</td>
+                <td>conteúdo</td>
+            </tr>
+
+        </table>
+
+
+        <h2>Subtítulo</h2>
+        <p id="demo" style="color: yellow; background-color: black;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim placeat cum consectetur mollitia,
+            voluptate at natus distinctio? Optio aperiam consequatur doloremque ea aliquam! Nostrum quisquam at laborum
+            eius mollitia!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias perspiciatis architecto quaerat,
+            pariatur quas accusantium exercitationem ad quod sed a, illo eius debitis omnis tenetur! Libero saepe facere
+            voluptatum eos.
+        </p>
+
+        <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id similique
+            maiores dolore laudantium sit quisquam rem totam laboriosam, omnis dignissimos! Praesentium inventore quam
+            eveniet aut voluptates repudiandae reiciendis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio perspiciatis dolorum iusto assumenda
+            nobis ducimus nesciunt eos dicta atque consequatur? Dolorum eius accusantium dignissimos. Ipsum natus beatae
+            repellat! Magnam, eius!
+        </p>
+        <h1 class="normal">Lorem ipsum dolor sit amet</h1>
+        <p class="normal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim placeat cum consectetur mollitia,
+            voluptate at natus distinctio? Optio aperiam consequatur doloremque ea aliquam! Nostrum quisquam at laborum
+            eius mollitia!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias perspiciatis architecto quaerat,
+            pariatur quas accusantium exercitationem ad quod sed a, illo eius debitis omnis tenetur! Libero saepe facere
+            voluptatum eos.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id similique maiores dolore
+            laudantium sit quisquam rem totam laboriosam, omnis dignissimos! Praesentium inventore quam eveniet aut
+            voluptates repudiandae reiciendis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio perspiciatis dolorum iusto assumenda
+            nobis ducimus nesciunt eos dicta atque consequatur? Dolorum eius accusantium dignissimos. Ipsum natus beatae
+            repellat! Magnam, eius!
+        </p>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim placeat cum consectetur mollitia,
+            voluptate at natus distinctio? Optio aperiam consequatur doloremque ea aliquam! Nostrum quisquam at laborum
+            eius mollitia!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias perspiciatis architecto quaerat,
+            pariatur quas accusantium exercitationem ad quod sed a, illo eius debitis omnis tenetur! Libero saepe facere
+            voluptatum eos.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id similique maiores dolore
+            laudantium sit quisquam rem totam laboriosam, omnis dignissimos! Praesentium inventore quam eveniet aut
+            voluptates repudiandae reiciendis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio perspiciatis dolorum iusto assumenda
+            nobis ducimus nesciunt eos dicta atque consequatur? Dolorum eius accusantium dignissimos. Ipsum natus beatae
+            repellat! Magnam, eius!
+        </p>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim placeat cum consectetur mollitia,
+            voluptate at natus distinctio? Optio aperiam consequatur doloremque ea aliquam! Nostrum quisquam at laborum
+            eius mollitia!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias perspiciatis architecto quaerat,
+            pariatur quas accusantium exercitationem ad quod sed a, illo eius debitis omnis tenetur! Libero saepe facere
+            voluptatum eos.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis id similique maiores dolore
+            laudantium sit quisquam rem totam laboriosam, omnis dignissimos! Praesentium inventore quam eveniet aut
+            voluptates repudiandae reiciendis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio perspiciatis dolorum iusto assumenda
+            nobis ducimus nesciunt eos dicta atque consequatur? Dolorum eius accusantium dignissimos. Ipsum natus beatae
+            repellat! Magnam, eius!
+        </p>
+
+        <button onclick="document.getElementById('demo').innerHTML='Novo texto do parágrafo'">Alterar texto</button>
+
+    </body>
+
 </html>
