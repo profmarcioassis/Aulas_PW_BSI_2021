@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula 06/12</title>
+
+        <script>
+            /*
+                ler 2 números e escrever na tela as operações aritméticas desses números
+            */
+           
+            function Somar() {
+                //pegando os valores das inputs
+                let n1 = parseInt(document.getElementById("number_1").value);
+                let n2 = parseInt(document.getElementById("number_2").value);
+                //atribuindo a resposta para a input "resposta"
+                document.getElementById("resposta").value = n1 + n2;
+            }
+
+            function Subtrair() {
+                //pegando os valores das inputs
+                let n1 = parseInt(document.getElementById("number_1").value);
+                let n2 = parseInt(document.getElementById("number_2").value);
+                //atribuindo a resposta para a input "resposta"
+                document.getElementById("resposta").value = n1 - n2;
+            }
+
+            function Multiplicar() {
+                //pegando os valores das inputs
+                let n1 = parseInt(document.getElementById("number_1").value);
+                let n2 = parseInt(document.getElementById("number_2").value);
+                //atribuindo a resposta para a input "resposta"
+                document.getElementById("resposta").value = n1 * n2;
+            }
+
+            function Dividir() {
+                let n1 = parseInt(document.getElementById("number_1").value);
+                let n2 = parseInt(document.getElementById("number_2").value);
+
+                if (n2 == 0) {
+                    document.getElementById("resposta").value = "Erro: Divisão por zero";
+                } else {
+                    document.getElementById("resposta").value = n1 / n2;
+                }
+            }
+            /*
+            document.write("<br>A soma de " + n1 + " + " + n2 + " = " + Somar (n1, n2));
+            document.write("<br>A subtração de " + n1 + " - " + n2 + " = " + Subtrair(n1, n2));
+            document.write("<br>A multiplicação de " + n1 + " * " + n2 + " = " + Multiplicar (n1, n2));
+            document.write("<br>A divisão de " + n1 + " / " + n2 + " = " + Dividir (n1, n2));
+            */
+        </script>
+    </head>
+
+    <body>
+
+        <h2>Calculadora simples</h2>
+
+        <label for="number_1">Número 1</label>
+        <input type="number" id="number_1"><br><br>
+
+        <label for="number_2">Número 2</label>
+        <input type="number" id="number_2"><br><br>
+
+        <button onclick="Somar();">Somar</button>
+        <button onclick="Subtrair();">Subtrair</button>
+        <button onclick="Multiplicar();">Multiplicar</button>
+        <button onclick="Dividir();">Dividir</button>
+
+        <br><br>
+        <label for="resposta">Resposta: </label>
+        <input type="text" disabled id="resposta">
+    </body>
+
+</html>
